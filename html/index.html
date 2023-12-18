@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio de Noé Fuertes-Torredemé</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css/">
+    <style>
+        .navbar-nav {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(to right, darkgray, gray);
+            animation: gradientAnimation 5s linear infinite;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        .navbar {
+            z-index: 1;
+        }
+
+        .container {
+            color: #fff;
+        }
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Accueil </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apropos.html">A propos de moi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Mon contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h2>Bienvenue sur mon portfolio !</h2>
+        <div class="text-container">
+            <p class="hidden">Je m'appelle Noé Fuertes-Torredemé, je suis un jeune passionné d'informatique.</p>
+            <p class="hidden">Vous pouvez retrouver sur ce site mes différents projets,</p>
+            <p class="hidden">ainsi que mon CV et comment me contacter.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lines = document.querySelectorAll('.text-container .hidden');
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.classList.remove('hidden');
+                }, index * 2000);
+            });
+        });
+    </script>
+</body>
+</html>
