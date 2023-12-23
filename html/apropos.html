@@ -119,9 +119,12 @@
         .popup-content ul:first-child{
             margin-top: 50px;
         }
-        #listeParcours li{
+        .listeTexte li{
             margin-bottom: 5px;
             padding: 10px;
+        }
+        #dl-button{
+            width:20%;
         }
     </style>
 </head>
@@ -163,7 +166,7 @@
             <div class="popup-content">
                 <span class="close" id="close1">&times;</span>
                 <h2>Voici un résumé de mon parcours dans le monde de l'informatique</h2>
-                <ul id="listeParcours">
+                <ul class="listeTexte">
                     <li>J'ai effectué durant mon année de seconde un stage d'une semaine dans une petite SAS d'informatique,
                     qui fut ma première immersion dans l'informatique dans le monde professionnel.</li>
                     <li>J'ai obtenu mon baccalauréat général (mention bien) avec les spécialités Mathématiques et Numérique
@@ -177,7 +180,7 @@
         <div class="popup" id="popup2">
             <div class="popup-content">
                 <span class="close" id="close2">&times;</span>
-                <h2 style="margin-bottom: 30px">Liste de mes compétences informatique</h2>
+                <h2 style="margin-bottom: 30px">Liste de mes compétences informatiques</h2>
                 <ul>
                     <li><h4>Langages informatiques</h4></li>
                     <li>Java, Python, PHP, SQL,<br> HTML, CSS, JavaScript, <br> C, C#, Bash</li>
@@ -191,10 +194,24 @@
             <div class="popup-content">
                 <span class="close" id="close3">&times;</span>
                 <h2>Laissez-moi vous parler de mes qualités</h2>
-                <p>This is the modal content.</p>
+                <ul class="listeTexte">
+                    <li>Je suis de nature curieuse, j'aime beaucoup découvrir de nouveaux langages
+                    de programmation, de nouveaux frameworks et utiliser différents outils.</li>
+                    <li>Je n'aime pas faire les choses à moitié, je suis persévérant dans
+                    les projets que j'entreprends.</li>
+                    <li>Je possède une bonne faculté d'adaptation, ce qui fait que je peux facilement
+                    passer d'un langage à l'autre, utiliser de nouveaux outils ou changer de système
+                    d'exploitation.</li>
+                </ul>
             </div>
         </div>
     </div>
+    <h2 style="margin-top: 80px">Télechargez mon CV !</h2>
+    <a href="https://drive.google.com/uc?export=download&id=1FFKagpE_5dfFmaueWAPRH_FEDOUwDkET">
+        <button id="dl-button" class="stylish-button">Télecharger | <img style="width:12%" src="../resources/download.png" alt="download"></button>
+    </a>
+
+
 </div>
 
 <script>
