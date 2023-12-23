@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Noé Fuertes-Torredemé</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style>
@@ -10,9 +11,11 @@
             display: flex;
             justify-content: center;
         }
+
         .navbar-nav .nav-item {
             margin-right: 15px;
         }
+
         body {
             margin: 0;
             overflow: hidden;
@@ -20,6 +23,7 @@
             background-size: 510% 510%;
             animation: pulsate 4s infinite;
         }
+
         @keyframes pulsate {
             0% {
                 background-size: 200% 200%;
@@ -31,6 +35,7 @@
                 background-size: 200% 200%;
             }
         }
+
         .navbar {
             z-index: 1;
         }
@@ -38,6 +43,7 @@
         .container {
             color: #fff;
         }
+
         /*.hidden {
             opacity: 0;
             transition: opacity 1s ease-in-out;
@@ -49,53 +55,53 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Accueil </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projets.html">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="apropos.html">A propos de moi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Mon contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container mt-4">
-        <h2>Bienvenue sur mon portfolio !</h2>
-        <div class="text-container">
-            <p class="word-line">Je m'appelle Noé Fuertes-Torredemé, je suis un jeune passionné d'informatique.</p>
-            <p class="word-line">Vous pouvez retrouver sur ce site mes différents projets,</p>
-            <p class="word-line">ainsi que mon CV et comment me contacter.</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Accueil </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projets.html">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="apropos.html">A propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Mon contact</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <script>
-        const textContainers = document.querySelectorAll(".word-line");
-        textContainers.forEach((textContainer, lineIndex) => {
-            const words = textContainer.innerText.split(" ");
-            textContainer.innerHTML = "";
-            words.forEach((word, wordIndex)=>{
-                const span = document.createElement("span");
-                span.textContent = word +" ";
-                span.style.opacity = 0;
-                span.style.transition = `opacity 1s ${lineIndex * 0.2 + wordIndex * 0.2}s`;
-                textContainer.appendChild(span);
-                span.offsetWidth;
-                span.style.opacity = 1;
-            });
+</nav>
+<div class="container mt-4">
+    <h2>Bienvenue sur mon portfolio !</h2>
+    <div class="text-container">
+        <p class="word-line">Je m'appelle Noé Fuertes-Torredemé, je suis un jeune passionné d'informatique.</p>
+        <p class="word-line">Vous pouvez retrouver sur ce site mes différents projets,</p>
+        <p class="word-line">ainsi que mon CV et comment me contacter.</p>
+    </div>
+</div>
+<script>
+    const textContainers = document.querySelectorAll(".word-line");
+    textContainers.forEach((textContainer, lineIndex) => {
+        const words = textContainer.innerText.split(" ");
+        textContainer.innerHTML = "";
+        words.forEach((word, wordIndex) => {
+            const span = document.createElement("span");
+            span.textContent = word + " ";
+            span.style.opacity = 0;
+            span.style.transition = `opacity 1s ${lineIndex * 0.2 + wordIndex * 0.2}s`;
+            textContainer.appendChild(span);
+            span.offsetWidth;
+            span.style.opacity = 1;
         });
-    </script>
+    });
+</script>
 </body>
 </html>
