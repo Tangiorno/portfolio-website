@@ -111,6 +111,17 @@
             background-color: #fff;
             color: blue;
         }
+        .popup-content ul{
+            list-style: none;
+            padding: 0;
+        }
+        .popup-content ul:first-child{
+            margin-top: 50px;
+        }
+        #listeParcours li{
+            margin-bottom: 5px;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -150,16 +161,28 @@
         <div class="popup" id="popup1">
             <div class="popup-content">
                 <span class="close" id="close1">&times;</span>
-                <h2>Voici un résumé de mon parcours</h2>
-                <p>This is the modal content.</p>
+                <h2>Voici un résumé de mon parcours dans le monde de l'informatique</h2>
+                <ul id="listeParcours">
+                    <li>J'ai effectué durant mon année de seconde un stage d'une semaine dans une petite SAS d'informatique,
+                    qui fut ma première immersion dans l'informatique dans le monde professionnel.</li>
+                    <li>J'ai obtenu mon baccalauréat général (mention bien) avec les spécialités Mathématiques et Numérique
+                    et Sciences de l'Informatique au Lycée Polyvalent Pablo Picasso de Perpignan.</li>
+                    <li>Je suis actuellement en 2ème année de BUT Informatique à l'IUT de Montpellier-Sète, dans le parcours
+                    RACDV (Réalisation d'applications: conception, développement, validation).</li>
+                </ul>
             </div>
         </div>
         <button onclick="popup(2)" style="margin-left: 300px; margin-right: 300px; margin-top: 30px" class="stylish-button" id="bouton2">Mes compétences</button>
         <div class="popup" id="popup2">
             <div class="popup-content">
                 <span class="close" id="close2">&times;</span>
-                <h2>Vous pouvez voir ici mes compétences</h2>
-                <p>This is the modal content.</p>
+                <h2 style="margin-bottom: 30px">Liste de mes compétences informatique</h2>
+                <ul>
+                    <li><h4>Langages informatiques</h4></li>
+                    <li>Java, Python, PHP, SQL,<br> HTML, CSS, JavaScript, <br> C, C#, Bash</li>
+                    <li><h4 style="margin-top:20px; margin-bottom:20px">Outils maîtrisés</h4></li>
+                    <li>Linux (Ubuntu, Debian), Git (Gitlab, GitHub), <br> PhpMyAdmin, IDEs Jetbrains, VSCode, <br> Vim, UML, Unity</li>
+                </ul>
             </div>
         </div>
         <button onclick="popup(3)" style="margin-top: 30px" class="stylish-button" id="bouton3">Mes qualités</button>
