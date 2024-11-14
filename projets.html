@@ -6,154 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes projets</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <style>
-        .navbar-nav {
-            margin: auto;
-            display: flex;
-            justify-content: center;
-        }
-
-        .navbar-nav .nav-item {
-            margin-right: 15px;
-        }
-
-        body {
-            margin: 0;
-            overflow: hidden;
-            background: radial-gradient(circle, blueviolet, black);
-            background-size: 510% 510%;
-            animation: pulsate 4s infinite;
-        }
-
-        @keyframes pulsate {
-            0% {
-                background-size: 200% 200%;
-            }
-            50% {
-                background-size: 250% 250%;
-            }
-            100% {
-                background-size: 200% 200%;
-            }
-        }
-
-        .navbar {
-            z-index: 1;
-        }
-
-        .container {
-            color: #fff;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .grid-item {
-            padding: 20px;
-            margin: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            color: black;
-        }
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-            animation: fadeIn 0.5s forwards;
-        }
-
-        .popup-content {
-            background: #fff;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #000;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .close:hover {
-            color: black;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .stylish-button {
-            padding: 10px 20px;
-            width: 300px;
-            border: 2px solid lightblue;
-            border-radius: 10px;
-            background-color: blue;
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .stylish-button:hover {
-            background-color: #fff;
-            color: blue;
-        }
-
-        .popup-content ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .popup-content ul:first-child {
-            margin-top: 50px;
-        }
-
-        #fiut {
-            width: 80%;
-        }
-
-        #penguin {
-            width: 80%;
-        }
-
-        #rails {
-            width: 80%;
-        }
-
-        #glove {
-            width: 60%;
-        }
-
-        #ioe{
-            width: 60%;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -203,7 +56,7 @@
                     </p>
                     <img id="fiut" src="./resources/formatiut.png" alt="formatiut">
                     <p>Capture d'écran de Format'IUT (côté administrateur)</p>
-                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~loyet/2S5t5RAd2frMP6/web/controleurFrontal.php"
+                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~fuertesn/devapplicationformatiut/web/controleurFrontal.php"
                        target="_blank">Lien
                         du site</a>
                 </div>
@@ -244,7 +97,7 @@
                         <img id="glove" src="./resources/glove.png" alt="glove">
                         <p>Capture d'écran du seul niveau restant de Glove</p>
                         <img id="ioe" src="./resources/ioe.png" alt="ioe">
-                        <p>Capture d'écran de l'écran titre du jeu</p>
+                        <p>Capture d'écran de l'écran titre du jeu Islands of Ether</p>
                 </div>
             </div>
         </div>
