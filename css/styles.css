@@ -5,7 +5,7 @@
 }
 
 .navbar-nav .nav-item {
-    margin-right: 15px;
+    margin-right: 60px;
 }
 
 body {
@@ -14,6 +14,9 @@ body {
     background: radial-gradient(circle, blueviolet, black);
     background-size: 510% 510%;
     animation: pulsate 4s infinite;
+    height: 100%;
+    overflow-y: auto;
+    margin-bottom: 10%;
 }
 
 @keyframes pulsate {
@@ -126,22 +129,30 @@ body {
 }
 
 #fiut {
-    width: 80%;
-}
-
-#penguin {
-    width: 80%;
-}
-
-#rails {
-    width: 80%;
-}
-
-#glove {
     width: 60%;
 }
 
+#penguin {
+    width: 60%;
+}
+
+#rails {
+    width: 60%;
+}
+
+#glove {
+    width: 45%;
+}
+
 #ioe{
+    width: 45%;
+}
+
+#annuaire{
+    width: 60%;
+}
+
+#concerts{
     width: 60%;
 }
 
@@ -151,7 +162,7 @@ img {
 }
 
 h3 {
-    color: white;
+    color: lightgray;
 }
 
 .listeTexte li{
